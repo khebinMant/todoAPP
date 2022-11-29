@@ -1,9 +1,9 @@
 <img src="./src/assets/kruger.png" height="50px">
 
-# Kruger Star Playground
+# Todo App
 > Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto 
 
-<img src="./src/assets/mock.png" height="300px">
+<img src="./src/assets/todo.png" height="300px">
 
 
 ## Built with 
@@ -16,13 +16,13 @@
 
 ## Live demo
 
-[Live demo link](https://kruger-star-playground-km.netlify.app/)
+[Live demo link](https://todo-app-kevin-mantilla.netlify.app/)
 
 ## Run it locally
 
  ### Setup
 
- - Clone this repo using `git clone https://github.com/khabLexander/taller-portafolio`
+ - Clone this repo using `git clone https://github.com/khabLexander/todoAPP`
 
  ### Comands
 
