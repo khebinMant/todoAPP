@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { useForm } from '../hooks/useForm'
 
-
-
 export const TodoItem = ({todo, handleRemoveTodo,handleEditTodo, handleCompleteTodo}) => {
 
     const formValues = {
@@ -68,6 +66,7 @@ export const TodoItem = ({todo, handleRemoveTodo,handleEditTodo, handleCompleteT
                         style={{marginRight:'10px'}}
                         className="btn btn-primary"
                         onClick={()=>setIsEdit(true)}
+                        disabled={todo.completed}
                     >
                         Editar
                     </button>

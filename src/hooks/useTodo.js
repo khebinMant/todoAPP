@@ -1,8 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
+
+const init = ()=>{
+  return JSON.parse(localStorage.getItem('todos')) || []
+}
 
 export const useTodo = () => {
-    const [todos, setTodos] = useState([])
+
+    const [todos, setTodos] = useState(init)
   
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos))
+    }, [todos])
+
     const handleRemoveTodo = (todoId) =>{
       let newTodos = todos.filter(todo=> todo.id !== todoId)
       setTodos(newTodos)

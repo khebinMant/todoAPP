@@ -1,7 +1,7 @@
 <img src="./src/assets/kruger.png" height="50px">
 
 # Todo App
-> Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto Primer proyecto 
+> Todo App
 
 <img src="./src/assets/todo.png" height="300px">
 
