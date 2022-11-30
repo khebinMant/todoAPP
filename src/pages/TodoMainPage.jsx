@@ -14,8 +14,8 @@ export const TodoMainPage = () => {
         <h1><small> Pendientes: {todos.filter(todo=>todo.completed!==true).length}</small></h1>
         <h1><small> Hechos: {todos.filter(todo=>todo.completed===true).length}</small></h1>
         <hr/>
-        <div className="row">
-            <div className="col-7">
+        <div>
+            <div>
                 <TodoList 
                     todos = {todos} 
                     handleRemoveTodo={handleRemoveTodo}
@@ -23,7 +23,7 @@ export const TodoMainPage = () => {
                     handleCompleteTodo={handleCompleteTodo}
                   />
             </div>
-            <div className="col-5">
+            <div >
                 <h4>Agregar TODO</h4>
                 <hr/>
                 <TodoAdd 

@@ -1,13 +1,13 @@
 import { useForm } from '../hooks/useForm'
 
-const formValues = {
-    title: ''
-}
 
 export const TodoAdd = ({setTodos, todos}) => {
 
-
-    const {title, onInputChange} = useForm(formValues)
+    const formValues = {
+        title: ''
+    }
+    
+    const {title, onInputChange, onResetFormContent} = useForm(formValues)
 
     const onFormSubmit = (event)=>{
         event.preventDefault();
@@ -20,6 +20,7 @@ export const TodoAdd = ({setTodos, todos}) => {
         let temp = [...todos]
         temp.unshift(newTodo)
         setTodos(temp)
+        onResetFormContent()
     }
 
   return (
@@ -29,7 +30,7 @@ export const TodoAdd = ({setTodos, todos}) => {
             name='title'
             placeholder="¿Que se debe hacer?"
             className="form-control"
-            value={title}
+            value={title || ''}
             onChange={onInputChange}
         />
         <button 
