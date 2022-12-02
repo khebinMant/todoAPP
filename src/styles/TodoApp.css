@@ -1,0 +1,12 @@
+.todo-content{
+    width: 1000px;
+}
+.todo-content h1{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .todo-content{
+        width: auto;
+    }
+  }
